@@ -1,0 +1,79 @@
+Chapter 3: System Design
+
+This chapter focuses on the design aspects of the web-based air cargo management system, including the prototype design and the framework adopted for the system. It aims to provide a blueprint for how the system will function and interact with users, ensuring it meets the requirements identified in previous chapters.
+3.1 Prototype Design
+
+The prototype design serves as a preliminary model of the system, providing a visual and functional representation of its core features. The design focuses on user-friendly interfaces and modularity to accommodate the diverse roles of users such as administrators, cargo agents, and customers.
+3.1.1 User Interface (UI) Overview
+
+The prototype is designed with simplicity and efficiency in mind, ensuring that users can navigate and perform tasks with minimal training. The key UI components are:
+
+    Dashboard: A centralized interface where users can access key information such as shipment status, booking schedules, and notifications.
+    Navigation Menu: A collapsible menu providing quick access to modules like booking, tracking, documentation, and reporting.
+    Forms and Input Fields: Easy-to-use forms for booking cargo, generating documentation, and managing user profiles.
+    Visual Analytics: Charts and graphs to represent data, such as cargo volume trends and financial summaries.
+
+3.1.2 Prototype Pages
+
+    Login Page: Secure authentication system with options for different user roles (administrator, cargo agent, and customer).
+    Dashboard: A summary of critical information, tailored to each user role. For example:
+        Customers: Shipment tracking and billing details.
+        Agents: Pending bookings, shipments in transit, and documentation status.
+        Administrators: System performance metrics, user activities, and overall operational data.
+    Booking Page: A form-based interface for booking air cargo. Users can enter details such as cargo type, weight, dimensions, and destination.
+    Tracking Page: A shipment tracking page with real-time updates and maps showing the cargo’s location.
+    Documentation Page: A document generation and management interface. Users can create, view, and download air waybills, invoices, and manifests.
+    Reporting Page: A customizable reporting tool to generate insights on operations, revenue, and customer satisfaction.
+
+3.1.3 Wireframes
+
+Wireframes for the system outline the placement of UI components on each page. These wireframes are developed using industry-standard tools like Figma or Adobe XD to ensure a professional and intuitive design.
+3.2 Design Framework
+
+The design framework outlines the architectural and technological foundation of the system. The framework ensures that the system is scalable, secure, and easy to maintain.
+3.2.1 Architectural Design
+
+The system adopts a 3-Tier Architecture consisting of the following layers:
+
+    Presentation Layer: The front-end interface that users interact with, built using HTML, CSS, and JavaScript frameworks like React or Angular.
+    Business Logic Layer: The back-end layer where core functionalities, such as booking, tracking, and documentation processing, are implemented. This layer uses a server-side programming language like Python (Django/Flask) or Node.js.
+    Data Layer: The database that stores information on users, shipments, bookings, and financial transactions. A relational database management system like MySQL or PostgreSQL is used for structured data, while MongoDB is used for unstructured data.
+
+3.2.2 Development Framework
+
+The system is built on a modern web development framework to ensure reliability, security, and efficiency:
+
+    Front-End Framework: React.js or Angular for dynamic and responsive UI.
+    Back-End Framework: Django or Flask for handling server-side logic.
+    Database Framework: MySQL or PostgreSQL for reliable and secure data storage.
+    API Integration Framework: RESTful APIs for communication between modules and integration with third-party services like payment gateways and customs systems.
+
+3.2.3 Design Principles
+
+    User-Centered Design: The system prioritizes user needs, ensuring an intuitive and accessible interface.
+    Modularity: Each functionality is implemented as a separate module, ensuring scalability and maintainability.
+    Responsiveness: The system is optimized for various devices, including desktops, tablets, and smartphones.
+    Security: Robust security measures, such as encryption, multi-factor authentication, and role-based access control, are implemented to safeguard sensitive data.
+    Performance: Efficient algorithms and caching mechanisms are employed to ensure fast response times, even under heavy usage.
+
+3.3 Tools and Technologies
+
+The prototype and system design leverage the following tools and technologies:
+
+    UI/UX Design: Figma, Adobe XD, or Sketch.
+    Programming Languages: Python (Django/Flask), JavaScript (React/Angular), HTML, CSS.
+    Database Management: MySQL, PostgreSQL, MongoDB.
+    APIs: Google Maps API for tracking, Stripe/PayPal for payments, and customs clearance APIs.
+    Hosting Platforms: AWS, Microsoft Azure, or Google Cloud for deployment and scalability.
+    Version Control: Git/GitHub for collaborative development.
+
+3.4 System Workflow
+
+The workflow of the system ensures seamless coordination between modules:
+
+    User Authentication: Users log in based on their roles, gaining access to relevant functionalities.
+    Cargo Booking: Customers or agents enter shipment details and confirm bookings.
+    Documentation: The system automatically generates required documents, such as air waybills and invoices.
+    Tracking: Real-time updates on cargo status are provided through the tracking module.
+    Billing and Payments: The system generates invoices and allows customers to make payments via integrated gateways.
+    Reporting: Administrators and agents access reports to analyze operational performance.
