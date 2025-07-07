@@ -1,2 +1,2 @@
 # ACMS
-Air Cargo Management System
+System to manage air cargo remotely.
